@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Profile_Info">
+
+
+    <TextView
+        android:id="@+id/tv_ProfileInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/reemkufi"
+        android:text="@string/profile"
+        android:textColor="@color/darkBlue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/iv_ProfileInfo_profilePic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_ProfileInfo_profilePic"
+        android:layout_width="177dp"
+        android:layout_height="188dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="120dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/et_ProfileInfo_fullNameET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ProfileInfo"
+        tools:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/tv_ProfileInfo_fullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="52dp"
+        android:elevation="8dp"
+        android:fontFamily="@font/reemkufi"
+        android:text="@string/full_name"
+        android:textColor="@color/darkBlue"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/et_ProfileInfo_fullNameET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_ProfileInfo_profilePic"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/et_ProfileInfo_fullNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="@color/darkBlue"
+        android:ellipsize="middle"
+        android:fontFamily="@font/reemkufi"
+        android:hint="@string/full_name"
+        android:inputType="text"
+
+        android:singleLine="true"
+        android:textColor="@color/darkBlue"
+        android:textColorHint="@color/darkBlue"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_ProfileInfo_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ProfileInfo_fullName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_ProfileInfo_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:elevation="8dp"
+        android:fontFamily="@font/reemkufi"
+        android:text="@string/email_id"
+        android:textColor="@color/darkBlue"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/et_ProfileInfo_emailET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_ProfileInfo_fullNameET" />
+
+    <EditText
+        android:id="@+id/et_ProfileInfo_emailET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/darkBlue"
+        android:ellipsize="middle"
+        android:fontFamily="@font/reemkufi"
+        android:hint="@string/email_id"
+        android:inputType="text"
+
+        android:singleLine="true"
+        android:textColor="@color/darkBlue"
+        android:textColorHint="@color/darkBlue"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_ProfileInfo_dob"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ProfileInfo_email"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_ProfileInfo_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="36dp"
+        android:elevation="8dp"
+        android:fontFamily="@font/reemkufi"
+        android:text="@string/dob"
+        android:textColor="@color/darkBlue"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/et_ProfileInfo_dobET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_ProfileInfo_emailET" />
+
+    <EditText
+        android:id="@+id/et_ProfileInfo_dobET"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="middle"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ProfileInfo_continue"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ProfileInfo_dob"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+
+        android:backgroundTint="@color/darkBlue"
+        android:textColorHint="@color/darkBlue"
+        android:hint="@string/dob"
+        android:fontFamily="@font/reemkufi"
+        android:textSize="12sp"
+        android:inputType="number"
+        android:textColor="@color/darkBlue"
+        android:singleLine="true"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ProfileInfo_continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et_ProfileInfo_dobET"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ProfileInfo_dob">
+
+        <RadioButton
+            android:id="@+id/male_RadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:elevation="8dp"
+            android:fontFamily="@font/reemkufi"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            android:text="@string/male"
+            android:textColor="@color/darkBlue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/female_RadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:elevation="8dp"
+            android:fontFamily="@font/reemkufi"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            android:text="@string/female"
+            android:textColor="@color/darkBlue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_ProfileInfo_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:fontFamily="@font/reemkufi"
+        android:text="@string/continuee"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:backgroundTint="@color/darkBlue"
+        app:cornerRadius="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

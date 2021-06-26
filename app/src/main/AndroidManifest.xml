@@ -9,6 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InfinityRead">
+        <activity android:name=".DM" />
+        <activity android:name=".Homepage" />
+        <activity android:name=".Add" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Interests" />
+        <activity android:name=".BookDetails" />
+        <activity android:name=".Profile_Settings" />
+        <activity android:name=".Profile_Info" />
+        <activity android:name=".OtpVerification" />
+        <activity android:name=".SignIn" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

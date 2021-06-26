@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".OtpVerification">
+
+
+    <TextView
+        android:id="@+id/tv_Verification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/reemkufi"
+        android:text="Verification"
+        android:textColor="@color/darkBlue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/iv_Verification_OTP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/iv_Verification_OTP"
+        android:layout_width="407dp"
+        android:layout_height="303dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/share_Knowledge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Verification"
+        tools:srcCompat="@drawable/otp" />
+
+    <TextView
+        android:id="@+id/share_Knowledge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/mistralfont"
+        android:text="@string/share_knowledge"
+        android:textColor="@color/darkBlue"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_Verification_verifyphoneText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_Verification_OTP" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutForPinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Verification_verify"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Verification_verifyphoneText">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/darkBlue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/otpDigit1"
+                android:layout_width="40dp"
+                android:layout_height="54dp"
+                android:layout_margin="2dp"
+                android:fontFamily="@font/reemkufi"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/darkBlue"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="LabeFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/darkBlue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/otpDigit2"
+                android:layout_width="40dp"
+                android:layout_height="54dp"
+                android:layout_margin="2dp"
+                android:fontFamily="@font/reemkufi"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/darkBlue"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="LabeFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/darkBlue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/otpDigit3"
+                android:layout_width="40dp"
+                android:layout_height="54dp"
+                android:layout_margin="2dp"
+                android:fontFamily="@font/reemkufi"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/darkBlue"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="LabeFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/darkBlue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/otpDigit4"
+                android:layout_width="40dp"
+                android:layout_height="54dp"
+                android:layout_margin="2dp"
+                android:fontFamily="@font/reemkufi"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/darkBlue"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="LabeFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/darkBlue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/otpDigit5"
+                android:layout_width="40dp"
+                android:layout_height="54dp"
+                android:layout_margin="2dp"
+                android:fontFamily="@font/reemkufi"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/darkBlue"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="LabeFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/darkBlue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/otpDigit6"
+                android:layout_width="40dp"
+                android:layout_height="54dp"
+                android:layout_margin="2dp"
+                android:fontFamily="@font/reemkufi"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/darkBlue"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="LabeFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_Verification_verifyphoneText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:layout_marginBottom="36dp"
+        android:elevation="8dp"
+        android:fontFamily="@font/reemkufi"
+        android:gravity="center"
+        android:text="@string/verify_phone"
+        android:textColor="@color/darkBlue"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutForPinView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/share_Knowledge" />
+
+    <Button
+        android:id="@+id/btn_Verification_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/reemkufi"
+        android:text="@string/verify"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:backgroundTint="@color/darkBlue"
+        app:cornerRadius="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutForPinView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
