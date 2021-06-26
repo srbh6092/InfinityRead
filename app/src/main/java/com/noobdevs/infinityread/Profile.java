@@ -1,6 +1,16 @@
 package com.noobdevs.infinityread;
 
-import android.app.Activity;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class Profile extends Activity {
+import android.os.Bundle;
+
+public class Profile extends AppCompatActivity {
+
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_profile);
+    }
 }

@@ -9,55 +9,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        app:fabAlignmentMode="center"
         android:backgroundTint="@color/darkBlue"
         app:fabCradleRoundedCornerRadius="5dp">
 
-        <LinearLayout
+        <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp">
-
-
-            <ImageButton
-                android:id="@+id/bottomBar_Home"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_home_24"
-                android:background="@color/darkBlue"
-                android:layout_marginLeft="20dp"
-                android:layout_marginStart="20dp" />
-
-            <ImageButton
-                android:id="@+id/bottomBar_Chat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_chat_bubble_24"
-                android:background="@color/darkBlue"
-                android:layout_marginLeft="40dp"
-                android:layout_marginStart="40dp" />
-
-            <ImageButton
-                android:id="@+id/bottomBar_Notify"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_notifications_24"
-                android:background="@color/darkBlue"
-                android:layout_marginLeft="160dp"
-                android:layout_marginStart="160dp" />
-
-            <ImageButton
-                android:id="@+id/bottomBar_Profile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_account_circle_24"
-                android:background="@color/darkBlue"
-                android:layout_marginLeft="40dp"
-                android:layout_marginStart="40dp" />
-
-
-        </LinearLayout>
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:elevation="0dp"
+            android:layout_marginRight="16dp"
+            app:menu="@menu/bottombar_menu"/>
 
     </com.google.android.material.bottomappbar.BottomAppBar>
 

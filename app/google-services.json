@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "261329919447",
+    "project_id": "infinityread-a9cae",
+    "storage_bucket": "infinityread-a9cae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261329919447:android:73298d050f47f2c93fbf92",
+        "android_client_info": {
+          "package_name": "com.noobdevs.infinityread"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "261329919447-duleac1aph3pgcpavuv5e5cu7mcfu4mn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.noobdevs.infinityread",
+            "certificate_hash": "5c064e34d6f14c002972cfec0e31b7ac4843475b"
+          }
+        },
+        {
+          "client_id": "261329919447-hds60bpo75uiqlu8gn5gvqb4s948c8o7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuK9NQxBTv3RmFjVnuwLn91m9WqHE-ycE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "261329919447-hds60bpo75uiqlu8gn5gvqb4s948c8o7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

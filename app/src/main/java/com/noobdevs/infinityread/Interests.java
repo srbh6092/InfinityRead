@@ -1,6 +1,14 @@
 package com.noobdevs.infinityread;
 
-import android.app.Activity;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class Interests extends Activity {
+import android.os.Bundle;
+
+public class Interests extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_interests);
+    }
 }
