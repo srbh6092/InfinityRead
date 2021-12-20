@@ -35,7 +35,7 @@ public class SignIn extends AppCompatActivity
                 Intent intent = new Intent(SignIn.this, OtpVerification.class);
                 intent.putExtra("PhoneNumber", signInPhoneNumber.getText().toString());
                 startActivity(intent);
-                Toast.makeText(SignIn.this, signInPhoneNumber.getText().toString(), Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
     }

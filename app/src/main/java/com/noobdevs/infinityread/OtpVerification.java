@@ -19,10 +19,12 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
 
+import java.security.Permission;
 import java.util.concurrent.TimeUnit;
 
 public class OtpVerification extends AppCompatActivity {
@@ -40,7 +42,6 @@ public class OtpVerification extends AppCompatActivity {
 
 
         String phoneNumberFromSignIn = "+91" + getIntent().getStringExtra("PhoneNumber");
-        Toast.makeText(this, phoneNumberFromSignIn, Toast.LENGTH_SHORT).show();
 
         //Initialization
         btnVerificationVerify = findViewById(R.id.btn_Verification_verify);
@@ -64,14 +65,15 @@ public class OtpVerification extends AppCompatActivity {
                         + otpDigit4.getText().toString()
                         + otpDigit5.getText().toString()
                         + otpDigit6.getText().toString() ;
-                Log.d("OTP" , code);
-                Toast.makeText(OtpVerification.this, code , Toast.LENGTH_SHORT).show();
-
                 if(code.isEmpty() || code.length() < 6)
                 {
-                    Toast.makeText(OtpVerification.this, "Wrong Otp...", Toast.LENGTH_SHORT).show();
                     return;
                 }
+
+                //ye wala
+
+                //yaha tak
+
                 verifyCode(code);
             }
         });
@@ -240,9 +242,10 @@ public class OtpVerification extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful())
                 {
-                    intent = new Intent(OtpVerification.this, Profile_Info.class);
+                    intent = new Intent(OtpVerification.this, LSPermission.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);
+                    FirebaseUser user = task.getResult().getUser();
                 }
                 else
                 {

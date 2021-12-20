@@ -54,6 +54,7 @@ public class Profile_Info extends AppCompatActivity
                 else {
                     Intent intent = new Intent(Profile_Info.this, Homepage.class);
                     startActivity(intent);
+                    finish();
                 }
             }
         });

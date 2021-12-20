@@ -34,7 +34,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_ProfileInfo"
-        tools:srcCompat="@drawable/profile" />
+        android:src="@drawable/profile" />
 
     <TextView
         android:id="@+id/tv_ProfileInfo_fullName"

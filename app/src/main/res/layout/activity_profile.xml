@@ -9,18 +9,31 @@
 
 
     //Profile header top
+
     <TextView
         android:id="@+id/tv_Profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/reemkufi"
         android:text="@string/profile"
-        android:textStyle="bold"
         android:textColor="@color/darkBlue"
         android:textSize="18sp"
-        android:fontFamily="@font/reemkufi"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_exit_to_app_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_Profile"
         app:layout_constraintTop_toTopOf="parent" />
 
     //All are of profile
@@ -209,7 +222,7 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="20dp"
@@ -221,24 +234,11 @@
         app:layout_constraintVertical_bias="1.0">
 
         <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout_profile"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/borrowed" />
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/lend" />
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/wish_list" />
-        </com.google.android.material.tabs.TabLayout>
+            android:layout_height="wrap_content"
+            app:tabTextColor="@color/darkBlue"
+            android:background="@color/white"/>
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewPager_Profile"
@@ -248,7 +248,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-    </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <FrameLayout
         android:id="@+id/frameLayout_Profile"
@@ -271,6 +271,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tabLayout"
             app:layout_constraintVertical_bias="1.0" />
+        
 
     </FrameLayout>
 

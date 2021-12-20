@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="80dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -18,6 +18,7 @@
             android:layout_margin="5dp">
 
         <ImageView
+            android:id="@+id/userPicBookChat"
             android:layout_width="70dp"
             android:src="@drawable/profile"
             android:layout_height="70dp"/>
@@ -31,6 +32,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/userNameBookChat"
             android:layout_marginTop="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -42,6 +44,7 @@
             android:textSize="14sp" />
 
         <TextView
+            android:id="@+id/lastMessageBookChat"
             android:layout_marginTop="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,4 +58,4 @@
 
     </LinearLayout>
 
-</androidx.cardview.widget.CardView>
+</LinearLayout>
