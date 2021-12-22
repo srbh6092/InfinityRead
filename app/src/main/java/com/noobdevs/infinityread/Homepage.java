@@ -114,7 +114,7 @@ public class Homepage extends AppCompatActivity {
             @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
                 //if snapshot is not null, to avoid exceptions
-                if(snapshot.exists()){
+                if(snapshot.exists()) {
 
                     //reading information of current book
                     String bookName = snapshot.child("Book Name").getValue().toString();
@@ -133,7 +133,7 @@ public class Homepage extends AppCompatActivity {
                             if (ownerSnapshot.exists()) {
 
                                 //getting owner name
-                                String ownerName = ownerSnapshot.child(ownerID).child("Name").getValue().toString();
+                                String ownerName = ownerSnapshot.child("Name").getValue().toString();
 
                                 //creating book object
                                 ModelBookCard book = new ModelBookCard(bookName,

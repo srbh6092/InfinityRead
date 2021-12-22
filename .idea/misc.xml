@@ -4,10 +4,21 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Saurabh/AndroidStudioProjects/InfinityRead/app/src/main/res/layout/activity_add.xml" value="0.18342391304347827" />
+        <entry key="..\:/Users/Saurabh/AndroidStudioProjects/InfinityRead/app/src/main/res/layout/activity_book_details.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/Saurabh/AndroidStudioProjects/InfinityRead/app/src/main/res/layout/activity_dm.xml" value="0.2421875" />
+        <entry key="..\:/Users/Saurabh/AndroidStudioProjects/InfinityRead/app/src/main/res/layout/activity_homepage.xml" value="0.2421875" />
+        <entry key="..\:/Users/Saurabh/AndroidStudioProjects/InfinityRead/app/src/main/res/layout/activity_interests.xml" value="0.15760869565217392" />
         <entry key="..\:/Users/Saurabh/AndroidStudioProjects/InfinityRead/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
+        <entry key="..\:/Users/Saurabh/AndroidStudioProjects/InfinityRead/app/src/main/res/layout/activity_permission.xml" value="0.2265625" />
         <entry key="..\:/Users/Saurabh/AndroidStudioProjects/InfinityRead/app/src/main/res/layout/activity_profile__info.xml" value="0.2421875" />
         <entry key="..\:/Users/Saurabh/AndroidStudioProjects/InfinityRead/app/src/main/res/layout/activity_profile__settings.xml" value="0.2421875" />
         <entry key="..\:/Users/Saurabh/AndroidStudioProjects/InfinityRead/app/src/main/res/layout/activity_sign_in.xml" value="0.2421875" />
+        <entry key="..\:/Users/Saurabh/AndroidStudioProjects/InfinityRead/app/src/main/res/layout/book_card.xml" value="0.4" />
+        <entry key="..\:/Users/Saurabh/AndroidStudioProjects/InfinityRead/app/src/main/res/layout/bottom_bar.xml" value="0.2421875" />
+        <entry key="..\:/Users/Saurabh/AndroidStudioProjects/InfinityRead/app/src/main/res/layout/fragment_borrowed.xml" value="0.2421875" />
+        <entry key="..\:/Users/Saurabh/AndroidStudioProjects/InfinityRead/app/src/main/res/layout/fragment_wish_list.xml" value="0.2421875" />
+        <entry key="..\:/Users/Saurabh/AndroidStudioProjects/InfinityRead/app/src/main/res/layout/single_dm.xml" value="0.2421875" />
+        <entry key="..\:/Users/Saurabh/AndroidStudioProjects/InfinityRead/app/src/main/res/menu/bottombar_menu.xml" value="0.264" />
       </map>
     </option>
   </component>
