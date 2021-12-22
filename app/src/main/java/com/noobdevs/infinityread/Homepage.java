@@ -9,10 +9,12 @@ import android.content.ClipData;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.noobdevs.infinityread.Model.ModelBookCard;
 
 import java.util.ArrayList;
@@ -22,6 +24,8 @@ public class Homepage extends AppCompatActivity {
     private RecyclerView recyclerView;
     private AdapterBookCard itemAdapter;
     private ArrayList<ModelBookCard> itemList;
+
+    FloatingActionButton floatingActionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +53,17 @@ public class Homepage extends AppCompatActivity {
                         break;
                 }
                 return true;
+            }
+        });
+
+        floatingActionButton = findViewById(R.id.floatingActionButton);
+
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext() , "Add", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext() , Add.class);
+                startActivity(intent);
             }
         });
 

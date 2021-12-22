@@ -2,10 +2,10 @@ package com.noobdevs.infinityread.Model;
 
 public class ModelBookCard
 {
-    private String bookName , points , userFullName , stars , photosCount ;
-    private int bookMainPic ;
+    private String bookName , points , userFullName , stars , bookMainPic ;
+    private int photosCount ;
 
-    public ModelBookCard(String bookName, String points, String userFullName, String stars, String photosCount, int bookMainPic)
+    public ModelBookCard(String bookName, String points, String userFullName, String stars, String bookMainPic, int photosCount)
     {
         this.bookName = bookName;
         this.points = points;
@@ -47,19 +47,19 @@ public class ModelBookCard
         this.stars = stars;
     }
 
-    public String getPhotosCount() {
+    public int getPhotosCount() {
         return photosCount;
     }
 
-    public void setPhotosCount(String photosCount) {
+    public void setPhotosCount(int photosCount) {
         this.photosCount = photosCount;
     }
 
-    public int getBookMainPic() {
+    public String getBookMainPic() {
         return bookMainPic;
     }
 
-    public void setBookMainPic(int bookMainPic) {
+    public void setBookMainPic(String bookMainPic) {
         this.bookMainPic = bookMainPic;
     }
 }
